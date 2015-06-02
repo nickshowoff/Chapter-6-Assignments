@@ -1,0 +1,23 @@
+6.2 (Reverse the numbers entered ) Write a program that reads ten integers and displays
+them in the reverse of the order in which they were read.
+
+import java.util.Scanner;
+
+ public class java {
+   public static void main(String[] args) {
+     
+     Scanner input = new Scanner(System.in);
+    
+     int[] studentScore = new int[10];
+     System.out.print("Enter " + 10 + " integers: ");
+
+     int i = 0;
+     for (i = 0; i < 10; i++) {
+       studentScore[i] = input.nextInt();
+     }
+     
+     for (i = 9; i >= 0; i--) {
+     System.out.println(studentScore[i]);
+     }  
+  }
+}
